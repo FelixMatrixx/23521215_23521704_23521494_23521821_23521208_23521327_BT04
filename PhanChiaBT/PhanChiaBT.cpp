@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 
-#define MAX_BAI_TAP 172 // Bo cac bai Interchange sort
+#define MAX_BAI_TAP 172
 
 void InBaiTap(int);
 int main()
