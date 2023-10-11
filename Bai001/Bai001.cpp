@@ -1,20 +1,53 @@
-// Bai001.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include <fstream>
+#include <iomanip>
+using namespace std;
+
+void TaoMaTran(int[][500], int&, int&);
+void XuatMaTran(int[][500], int, int);
+void Xuat(string, int[][500], int, int);
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a[500][500];
+    int m, n;
+    TaoMaTran(a, m, n);
+    XuatMaTran(a, m, n);
+    Xuat("data01.inp", a, m, n);
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+void TaoMaTran(int a[][500], int& m, int& n)
+{
+    cout << "Nhap m: ";
+    cin >> m;
+    cout << "Nhap n: ";
+    cin >> n;
+    for (int i = 0; i <= m - 1; i++)
+        for (int j = 0; j <= n - 1; j++)
+        {
+            cout << "Nhap a[" << i << "][" << j << "]: ";
+            cin >> a[i][j];
+        }
+}
+void XuatMaTran(int a[][500], int m, int n)
+{
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+            cout << fixed << setw(8) << setprecision(5) << a[i][j];
+        cout << endl;
+    }
+}
+void Xuat(string filename, int a[][500], int m, int n)
+{
+    ofstream fo(filename);
+    fo << setw(10) << m;
+    fo << setw(10) << n;
+    fo << "\n";
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+            fo << fixed << setw(10) << setprecision(5) << a[i][j];
+        fo << "\n";
+    }
+}
