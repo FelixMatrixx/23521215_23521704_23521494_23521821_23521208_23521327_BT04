@@ -3,20 +3,20 @@
 #include <iomanip>
 using namespace std;
 
-void TaoMaTran(int[][500], int&, int&);
-void XuatMaTran(int[][500], int, int);
-void Xuat(string, int[][500], int, int);
+void TaoMaTran(int[][100], int&, int&);
+void XuatMaTran(int[][100], int, int);
+void Xuat(string, int[][100], int, int);
 
 int main()
 {
-    int a[500][500];
+    int a[100][100];
     int m, n;
     TaoMaTran(a, m, n);
     XuatMaTran(a, m, n);
     Xuat("data01.inp", a, m, n);
     return 0;
 }
-void TaoMaTran(int a[][500], int& m, int& n)
+void TaoMaTran(int a[][100], int& m, int& n)
 {
     cout << "Nhap m: ";
     cin >> m;
@@ -29,7 +29,7 @@ void TaoMaTran(int a[][500], int& m, int& n)
             cin >> a[i][j];
         }
 }
-void XuatMaTran(int a[][500], int m, int n)
+void XuatMaTran(int a[][100], int m, int n)
 {
     for (int i = 0; i < m; i++)
     {
@@ -38,7 +38,7 @@ void XuatMaTran(int a[][500], int m, int n)
         cout << endl;
     }
 }
-void Xuat(string filename, int a[][500], int m, int n)
+void Xuat(string filename, int a[][100], int m, int n)
 {
     ofstream fo(filename);
     fo << setw(10) << m;
