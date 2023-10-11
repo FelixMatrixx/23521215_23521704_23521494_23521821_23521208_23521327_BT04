@@ -9,11 +9,11 @@ void Xuat(string, int[][100], int, int);
 
 int main()
 {
-    int a[100][100];
-    int m, n;
-    TaoMaTran(a, m, n);
-    XuatMaTran(a, m, n);
-    Xuat("data01.inp", a, m, n);
+    int b[100][100];
+    int k, l;
+    TaoMaTran(b, k, l);
+    XuatMaTran(b, k, l);
+    Xuat("data01.inp", b, k, l);
     return 0;
 }
 void TaoMaTran(int a[][100], int& m, int& n)
