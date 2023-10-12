@@ -12,6 +12,7 @@ int main()
     int b[100][100];
     int k, l;
     TaoMaTran(b, k, l);
+    cout << "\nMa tran ban dau: ";
     XuatMaTran(b, k, l);
     Xuat("data01.inp", b, k, l);
     return 0;

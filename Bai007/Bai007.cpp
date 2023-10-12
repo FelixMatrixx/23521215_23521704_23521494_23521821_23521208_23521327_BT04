@@ -11,6 +11,7 @@ int main()
     int b[100][100];
     int k, l;
     Nhap("intdata01.inp", b, k, l);
+    cout << "\nMa tran ban dau: ";
     Xuat(b, k, l);
     return 0;
 }
