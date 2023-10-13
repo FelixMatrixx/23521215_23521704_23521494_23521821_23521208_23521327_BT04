@@ -14,7 +14,7 @@ int main()
     int d;
     Nhap(b, k, l, d);
     cout << "\nMa tran ban dau: \n";
-    Xuat(b, k, l);
+    Xuat(b, k, Zl);
     int kq = DemHoanThien(b, k, l, d);
     cout << "So luong so hoan thien tren dong: " << kq;
     return 0;
