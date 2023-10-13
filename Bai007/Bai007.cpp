@@ -24,7 +24,7 @@ void Nhap(string filename, int a[][100], int& m, int& n)
         for (int j = 0; j <= n - 1; j++)
             fi >> a[i][j];
 }
-void XuatMaTran(int a[][100], int m, int n)
+void Xuat(int a[][100], int m, int n)
 {
     for (int i = 0; i < m; i++)
     {
