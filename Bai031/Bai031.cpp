@@ -2,22 +2,22 @@
 #include <iomanip>
 using namespace std;
 
-void Nhap(int[][100], int&, int&);
-void Xuat(int[][100], int, int);
-int TichLe(int[][100], int, int);
+void Nhap(float[][100], int&, int&);
+void Xuat(float[][100], int, int);
+float TongAm(float[][100], int, int);
 
 int main()
 {
-    int b[100][100];
+    float b[100][100];
     int k, l;
     Nhap(b, k, l);
     cout << "\nMa tran ban dau: \n";
     Xuat(b, k, l);
-    int tich = TichLe(b, k, l);
-    cout << "Tich cac so le tren hang chan: " << tich;
+    float kq = TongAm(b, k, l);
+    cout << "Tich cac so le tren hang chan: " << kq;
     return 0;
 }
-void Nhap(int a[][100], int& m, int& n)
+void Nhap(float a[][100], int& m, int& n)
 {
     cout << "Nhap m: ";
     cin >> m;
@@ -30,7 +30,7 @@ void Nhap(int a[][100], int& m, int& n)
             cin >> a[i][j];
         }
 }
-void Xuat(int a[][100], int m, int n)
+void Xuat(float a[][100], int m, int n)
 {
     for (int i = 0; i < m; i++)
     {
@@ -39,12 +39,12 @@ void Xuat(int a[][100], int m, int n)
         cout << endl;
     }
 }
-int TichLe(int a[][100], int m, int n)
+float TongAm(float a[][100], int m, int n)
 {
-    int tich = 1;
+    float s = 0;
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
-            if (i % 2 == 0 && a[i][j] % 2 != 0)
-                tich *= a[i][j];
-    return tich;
+            if (a[i][j] < 0)
+                s += a[i][j];
+    return s;
 }
