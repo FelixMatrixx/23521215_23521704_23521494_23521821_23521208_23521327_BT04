@@ -5,7 +5,7 @@ using namespace std;
 void Nhap(int[][100], int&, int&, int&);
 void Xuat(int[][100], int, int);
 int ktDoiXung(int);
-void LietKe(int[][100], int, int, int c);
+void LietKe(int[][100], int, int, int);
 
 int main()
 {
