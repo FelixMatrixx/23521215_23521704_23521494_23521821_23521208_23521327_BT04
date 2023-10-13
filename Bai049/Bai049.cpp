@@ -46,7 +46,7 @@ void Xuat(int a[][100], int m, int n)
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
-            cout << fixed << setw(8) << setprecision(5) << a[i][j];
+            cout << fixed << setw(8) << setprecision(3) << a[i][j];
         cout << endl;
     }
 }
