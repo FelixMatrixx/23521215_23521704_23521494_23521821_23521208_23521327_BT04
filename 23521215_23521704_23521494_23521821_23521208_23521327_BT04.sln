@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai145", "Bai145\Bai145.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai151", "Bai151\Bai151.vcxproj", "{ACC6E621-FBCC-47BF-B598-F8F36DD3B6B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai157", "Bai157\Bai157.vcxproj", "{6C480AF7-E73C-449D-AF7A-342C8E5541E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{ACC6E621-FBCC-47BF-B598-F8F36DD3B6B2}.Release|x64.Build.0 = Release|x64
 		{ACC6E621-FBCC-47BF-B598-F8F36DD3B6B2}.Release|x86.ActiveCfg = Release|Win32
 		{ACC6E621-FBCC-47BF-B598-F8F36DD3B6B2}.Release|x86.Build.0 = Release|Win32
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Debug|x64.ActiveCfg = Debug|x64
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Debug|x64.Build.0 = Debug|x64
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Debug|x86.ActiveCfg = Debug|Win32
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Debug|x86.Build.0 = Debug|Win32
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Release|x64.ActiveCfg = Release|x64
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Release|x64.Build.0 = Release|x64
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Release|x86.ActiveCfg = Release|Win32
+		{6C480AF7-E73C-449D-AF7A-342C8E5541E5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
