@@ -61,6 +61,7 @@ int DemLonNhat(int a[][100], int m, int n)
 }
 void LietKe(int a[][100], int m, int n)
 {
+	cout << "\nChi so (index) cot co so chu so nhieu nhat: ";
 	for (int j = 0; j < n; j++)
 	{
 		int s = 0;
@@ -70,6 +71,6 @@ void LietKe(int a[][100], int m, int n)
 			s += DemChuSo(k);
 		}
 		if (s == DemLonNhat(a, m, n))
-			cout << "\nChi so (index) cot co so chu so nhieu nhat: " << j;
+			cout << setw(5) << j;
 	}
 }
