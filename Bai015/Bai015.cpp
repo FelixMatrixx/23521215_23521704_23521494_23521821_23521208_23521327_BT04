@@ -6,24 +6,24 @@ void LietKe(int[][50], int, int, int);
 int main()
 {
 	int a[50][50];
-	int n, m;
-	Nhap(a, n, m);
+	int m, n;
+	Nhap(a, m, n);
 	int d;
 	cin >> d;
-	LietKe(a, n, m, d);
+	LietKe(a, m, n, d);
 	return 0;
 }
-void Nhap(int a[][50], int& n, int& m)
+void Nhap(int a[][50], int& m, int& n)
 {
-	cin >> n;
 	cin >> m;
-	for (int i = 0; i < n; i++)
-		for (int j = 0; j < m; j++)
+	cin >> n;
+	for (int i = 0; i < m; i++)
+		for (int j = 0; j < n; j++)
 			cin >> a[i][j];
 }
-void LietKe(int a[][50], int n, int m, int d)
+void LietKe(int a[][50], int m, int n, int d)
 {
-	for (int j = 0; j < m; j++)
+	for (int j = 0; j < n; j++)
 		if (a[d][j] % 2 == 0)
 			cout << setw(4) << a[d][j];
 }

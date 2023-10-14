@@ -27,7 +27,7 @@ int ktCucTieu(float a[][50], int m, int n, int i, int j)
 	int di[8] = { -1, -1, -1, 0, 0, 1, 1, 1 };
 	int dj[8] = { -1, 0, 1, -1, 1, -1, 0, 1 };
 	for (int t = 0; t < 8; t++)
-		if (a[i + di[t]][j + dj[t]] < a[i][j] 
+		if (a[i + di[t]][j + dj[t]] < a[i][j]
 			&& i + di[t] >= 0 && j + dj[t] >= 0
 			&& i + di[t] < m && j + dj[t] < n)
 			flag = 0;
