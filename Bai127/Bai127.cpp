@@ -1,12 +1,12 @@
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 
 void Nhap(float[][100], int&, int&);
 void Xuat(float[][100], int, int);
-int ktCotChan(float[][100], int, int);
-int ktCotLe(float[][100], int, int);
-void SapCotTang(float[100], int, int);
+void HoanVi(float&, float&);
+void SapCotTang(float[][100], int, int);
 void SapCotGiam(float[][100], int, int);
 void SapCotTangGiam(float[][100], int, int);
 
@@ -17,8 +17,9 @@ int main()
     Nhap(b, k, l);
     cout << "\nMa tran ban dau: \n";
     Xuat(b, k, l);
-    float kq = LonNhat(b, k, l);
-    cout << "Gia tri lon nhat trong ma tran: " << kq;
+    SapCotTangGiam(b, k, l);
+    cout << "\nMa tran luc sau: \n";
+    Xuat(b, k, l);
     return 0;
 }
 void Nhap(float a[][100], int& m, int& n)
@@ -43,4 +44,31 @@ void Xuat(float a[][100], int m, int n)
         cout << endl;
     }
 }
-int ktCotChan(float a[][100], int , int);
+void HoanVi(float& a, float& b)
+{
+    float temp = a;
+    a = b;
+    b = temp;
+}
+void SapCotTang(float a[][100], int m, int c)
+{
+    for (int i = 0; i < m - 1; i++)
+        for (int j = 0; j < m; j++)
+            if (a[i][c] > a[j][c])
+                HoanVi(a[i][c], a[j][c]);
+}
+void SapCotGiam(float a[][100], int m, int c)
+{
+    for (int i = 0; i < m - 1; i++)
+        for (int j = 0; j < m; j++)
+            if (a[i][c] < a[j][c])
+                HoanVi(a[i][c], a[j][c]);
+}
+void SapCotTangGiam(float a[][100], int m, int n)
+{
+    for (int j = 0; j < n; j++)
+        if (j % 2 == 0)
+            SapCotGiam(a, m, j);
+        else
+            SapCotTang(a, m, j);
+}
