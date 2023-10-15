@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai001", "Bai001\Bai001.vcxproj", "{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhanChiaBT", "PhanChiaBT\PhanChiaBT.vcxproj", "{63504C0B-7CFE-4890-98FE-603309E1412F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bai005", "Bai005\Bai005.vcxproj", "{43E13C90-9E61-4F11-95E4-B6CE79C70C9E}"
@@ -69,6 +71,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Debug|x64.ActiveCfg = Debug|x64
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Debug|x64.Build.0 = Debug|x64
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Debug|x86.ActiveCfg = Debug|Win32
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Debug|x86.Build.0 = Debug|Win32
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Release|x64.ActiveCfg = Release|x64
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Release|x64.Build.0 = Release|x64
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Release|x86.ActiveCfg = Release|Win32
+		{D6A5CAC7-B358-43FE-A7E9-3225ED293F25}.Release|x86.Build.0 = Release|Win32
 		{63504C0B-7CFE-4890-98FE-603309E1412F}.Debug|x64.ActiveCfg = Debug|x64
 		{63504C0B-7CFE-4890-98FE-603309E1412F}.Debug|x64.Build.0 = Debug|x64
 		{63504C0B-7CFE-4890-98FE-603309E1412F}.Debug|x86.ActiveCfg = Debug|Win32
